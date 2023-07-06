@@ -148,3 +148,41 @@ td .remove {
     cursor: pointer;
     color: red;
 }
+
+@media (max-width: 412px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .search input {
+        width: 18rem;
+    }
+
+    tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    tr th + th {
+        display: none;
+    }
+    tr td:nth-child(2) {
+        display: none;
+    }
+    tr td:nth-child(3) {
+        display: none;
+    }
+    tbody tr{
+        position: relative;
+    }
+
+    .remove {
+        position: absolute;
+        font-size: 5rem;
+        z-index: 999;
+        top: 45%;
+        right: 40%;
+    }
+}
